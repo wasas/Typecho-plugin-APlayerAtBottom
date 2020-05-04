@@ -139,9 +139,9 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
       	
       	//静态文件设置
       	if($aplayer === '0') {
-        	echo '<link rel="stylesheet" href="'.Helper::options()->pluginUrl.'/APlayerAtBottom/static/APlayer.min.css">';
+        	echo '<link rel="stylesheet" href="'.Helper::options()->pluginUrl.'/APlayerAtBottom/static/default/APlayer.min.css">';
         }elseif($aplayer === '1'){
-			echo '<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/APlayerAtBottom/static/APlayer.min.css">';
+			echo '<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/APlayerAtBottom@1.1.0/static/APlayer.min.css">';
 		}elseif($aplayer === '2'){}
       	
       	//判断是否打开歌词
@@ -254,9 +254,9 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
       	
       	//静态文件设置
       	if($aplayer === '0'){
-			echo '<script src="'.Helper::options()->pluginUrl.'/APlayerAtBottom/static/APlayer.min.js"></script>';
+			echo '<script src="'.Helper::options()->pluginUrl.'/APlayerAtBottom/static/default/APlayer.min.js"></script>';
 		}elseif($aplayer === '1') {
-        	echo '<script src="//cdn.jsdelivr.net/gh/SatoSouta/APlayerAtBottom/static/APlayer.min.js"></script>';
+        	echo '<script src="//cdn.jsdelivr.net/gh/SatoSouta/APlayerAtBottom@1.1.0/static/APlayer.min.js"></script>';
         }elseif($aplayer === '2'){}
         
 		//输出配置js
