@@ -19,8 +19,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
      */
     public static function activate(){
         Typecho_Plugin::factory('Widget_Archive')->footer = array('APlayerAtBottom_Plugin', 'footer');
-        Typecho_Plugin::factory('Widget_Archive')->header = array('APlayerAtBottom_Plugin', 'header');
-		Helper::addRoute('downplayer', '/downplayer.js' ,'APlayerAtBottom_Action' ,'action');
+		Typecho_Plugin::factory('Widget_Archive')->header = array('APlayerAtBottom_Plugin', 'header');
     	return '启用成功ヾ(≧▽≦*)o，请设置您您的歌单ID~';
     }
     /**
@@ -33,7 +32,6 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
      */
     public static function deactivate(){
 		unlink(__DIR__ .'/settings.json'); //删除settings.json
-		Helper::removeRoute("downplayer");
     	return '禁用成功！插件已经停用啦（；´д｀）ゞ';
     }
 
@@ -99,7 +97,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
         $form->addInput($theme);
         $volume = new Typecho_Widget_Helper_Form_Element_Text('volume', null, '0.7', _t('默认音量'), '这里填写不大于1的数字作为默认音量<br/>PS：播放器会记忆用户设置，用户手动设置音量后默认音量即失效');
 		$form->addInput($volume);
-		$hide = new Typecho_Widget_Helper_Form_Element_Radio('hide', array ('0' => '否', '1' => '是'), '0','是否仅显示展开图标', '选择是后则会默认隐藏播放器封面仅显示展开图标');
+		$hide = new Typecho_Widget_Helper_Form_Element_Radio('hide', array ('0' => '否', '1' => '是'), '0','是否默认收起播放器', '选择“是”后则会默认收起播放器');
 		$form->addInput($hide);
 		$cachetime = new Typecho_Widget_Helper_Form_Element_Text('cachetime', null, '86400', _t('缓存时间（秒）'), '这里填写自动缓存的时间，默认为24小时');
 		$form->addInput($cachetime);
