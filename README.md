@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/SatoSouta/APlayerAtBottom/master/banner.png">
+<img src="https://raw.githubusercontent.com/SatoSouta/APlayerAtBottom/master/banner.png"><br/>
 <a href="https://github.com/SatoSouta/APlayerAtBottom/releases/latest"><img src="https://img.shields.io/github/v/release/satosouta/APlayerAtBottom?color=%2342b983&style=for-the-badge"></a>
 <a href="https://github.com/MoePlayer/APlayer" target="_blank"><img src="https://img.shields.io/badge/based%20on-%E2%9D%A4 APlayer-ff69b4.svg?style=for-the-badge"></a>
 <a href="https://typecho.org"><img src="https://img.shields.io/badge/for-Typecho-blueviolet.svg?style=for-the-badge"></a> 
