@@ -67,7 +67,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 			$version_tips = '获取失败！请自行前往github获取更新！';
 			$new_version_out = '<font color="#e84118">获取失败！</font>';
 		}elseif($version < $new_version) {
-        	$version_tips = '该插件有<font color="#e84118">新版本</font> => <a href="'.$arr['assets'][0]['browser_download_url'].'" target="_blank">点击下载</a>';
+        	$version_tips = '该插件有<font color="#e84118">新版本</font> => <a href="https://gh.satosouta.workers.dev/'.$arr['assets'][0]['browser_download_url'].'" target="_blank">点击下载</a>';
 			$new_version_out = '<font color="#e84118">'.$new_version.'</font>';
 		}elseif($version > $new_version){
             $version_tips = '你怎么回事，怎么还比最新版本高了？';
