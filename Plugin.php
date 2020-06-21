@@ -53,7 +53,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 		ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; GreenBrowser)');
 		
 		//从GithubAPI拉取最新内容
-      	$arr = json_decode(@file_get_contents('https://api.github.com/repos/satosouta/APlayerAtBottom/releases/latest'), true);
+      	$arr = json_decode(@file_get_contents('https://api.github.com/repos/satosouta/Typecho-plugin-APlayerAtBottom/releases/latest'), true);
 		
 		//定义最新版本号
 		if(empty($arr['tag_name'])){
