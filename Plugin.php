@@ -148,7 +148,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
       	if($aplayer === '0') {
         	echo '<link rel="stylesheet" href="'.Helper::options()->pluginUrl.'/APlayerAtBottom/static/APlayer.min.css">';
         }elseif($aplayer === '1'){
-			echo '<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/APlayerAtBottom/static/APlayer.min.css">';
+			echo '<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/Typecho-plugin-APlayerAtBottom/static/APlayer.min.css">';
 		}
 
 		//展开设定
@@ -286,7 +286,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
       	if($aplayer === '0'){
 			echo '<script src="'.Helper::options()->pluginUrl.'/APlayerAtBottom/static/APlayer.min.js"></script>';
 		}elseif($aplayer === '1') {
-        	echo '<script src="//cdn.jsdelivr.net/gh/SatoSouta/APlayerAtBottom/static/APlayer.min.js"></script>';
+        	echo '<script src="//cdn.jsdelivr.net/gh/SatoSouta/Typecho-plugin-APlayerAtBottom/static/APlayer.min.js"></script>';
         }
         
 		//输出配置js
