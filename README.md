@@ -37,8 +37,8 @@
  - [Meto API](https://api.i-meto.com/)（Meto API QQ音乐/网易云音乐解析）
 
 ## 相关
- - 演示站点：[我的博客](https://713.moe/)
- - 介绍文章：[APlayerAtBottom - 给博客加上底部播放器吧](https://713.moe/p/135)
+ - 演示站点：[我的博客](https://blog.713.moe/)
+ - 介绍文章：[APlayerAtBottom - 给博客加上底部播放器吧](https://blog.713.moe/p/135)
 
 ---
 
