@@ -85,7 +85,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
       	//设置内容
       	$aplayer = new Typecho_Widget_Helper_Form_Element_Radio('aplayer', array ('0' => '本地', '1' => 'jsDelivr（推荐）', '2' => '我已经安装了APlayer的CSS&JS或者相关的插件'), '0','APlayer 静态资源加载', '防止APlayer版本不同导致问题，若您没有安装相关插件或者自行添加CSS/JS，您只需要选择前面两个选项中的一个即可');
     	$form->addInput($aplayer);
-    	$id = new Typecho_Widget_Helper_Form_Element_Text('id', null, '4907097519', _t('歌单id'), '这里填写你的 <b>网易云音乐</b> 或 <b>QQ音乐</b> 歌单ID，请不要填写成为UserID');
+    	$id = new Typecho_Widget_Helper_Form_Element_Text('id', null, '461909600', _t('歌单id'), '这里填写你的 <b>网易云音乐</b> 或 <b>QQ音乐</b> 歌单ID，请不要填写成为UserID');
         $form->addInput($id);
       	$autoplay = new Typecho_Widget_Helper_Form_Element_Radio('autoplay', array ('0' => '启用', '1' => '禁用'), '1','自动播放', 'PS：部分主题或浏览器可能不支持此项。');
     	$form->addInput($autoplay);
