@@ -142,7 +142,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 		$server = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> server;
 		$netease = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> netease;
 		$tencent = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> tencent;
-		$api = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> api;
+		$api = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> iapi;
       	
       	//静态文件设置
       	if($aplayer === '0') {
