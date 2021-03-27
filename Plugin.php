@@ -143,6 +143,12 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 		$netease = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> netease;
 		$tencent = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> tencent;
 		$api = Typecho_Widget::widget('Widget_Options') -> Plugin('APlayerAtBottom') -> iapi;
+		$arrContextOptions = [
+			"ssl" => [
+				"verify_peer"=>false,
+				"verify_peer_name"=>false,
+			],
+		];
       	
       	//静态文件设置
       	if($aplayer === '0') {
@@ -222,7 +228,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 				'server' => $server,
 				'api' => $apid
 			];
-			$data['data'] = @file_get_contents($api_out.$id."&rand=".mt_rand(0,999999));
+			$data['data'] = @file_get_contents($api_out.$id."&rand=".mt_rand(0,999999), false, stream_context_create($arrContextOptions));
 			file_put_contents(__DIR__ .'/settings.json',json_encode($data));
 		}else{
 			$decode = json_decode(file_get_contents(__DIR__ .'/settings.json'), true);
@@ -246,7 +252,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 					'server' => $server,
 					'api' => $apid
 				];
-				$data['data'] = @file_get_contents($api_out.$id."&rand=".mt_rand(0,999999));
+				$data['data'] = @file_get_contents($api_out.$id."&rand=".mt_rand(0,999999), false, stream_context_create($arrContextOptions));
 				file_put_contents(__DIR__ .'/settings.json',json_encode($data));
 			}else{
 				//若缓存不过期则重新获取设置内容以防用户设置更新
@@ -266,7 +272,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 					'api' => $apid
 				];
 				if($api != $oldapi || $server != $oldserver){
-					$data['data'] = @file_get_contents($api_out.$id."&rand=".mt_rand(0,999999));
+					$data['data'] = @file_get_contents($api_out.$id."&rand=".mt_rand(0,999999), false, stream_context_create($arrContextOptions));
 				}else{
 					$data['data'] = $olddata;
 				}
