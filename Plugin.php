@@ -236,7 +236,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 			$oldapi = $decode['settings']['api'];
 			$olddata = $decode['data'];
 			//检测缓存是否过期
-			if ((time() - $data['last_update']) < $cachetime) {
+			if ((time() - $decode['last_update']) < $cachetime) {
 				$data = [
 					'last_update' => time(),
 					'settings' => [],
