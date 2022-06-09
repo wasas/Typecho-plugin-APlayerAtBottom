@@ -5,8 +5,8 @@
  * 
  * @package APlayerAtBottom
  * @author 小太
- * @version 1.1.1
- * @link https://713.moe/
+ * @version 1.1.2
+ * @link https://baka.fun/
  */
 class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 {
@@ -47,7 +47,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
       	echo ('<style>.buttons a{background:#467b96; color:#fff; border-radius:4px; padding:.5em .75em; display:inline-block}</style>');
       	
 		//定义此插件版本
-		$version = '1.1.1'; 
+		$version = '1.1.2'; 
 		
 		//GithubAPI内容获取UA设定
 		ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; GreenBrowser)');
@@ -189,7 +189,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 				$api_out = $api;
 				$apid = '0';
 			}elseif($netease === '1'){
-				$api_out = 'https://api.9jojo.cn/netease/?type=playlist&id=';
+				$api_out = 'https://api.baka.fun/netease/?type=playlist&id=';
 				$apid = '1';
 			}elseif($netease === '2'){
 				$api_out = 'https://api.ohmyga.cn/netease/?use=1&type=playlist&id=';
