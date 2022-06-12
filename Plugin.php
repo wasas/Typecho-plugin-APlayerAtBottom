@@ -103,9 +103,9 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 		$form->addInput($cachetime);
 		$server = new Typecho_Widget_Helper_Form_Element_Radio('server', array ('0' => '网易云音乐', '1' => 'QQ音乐'), '0','选择音乐来源', '您可以选择使用网易云音乐或者QQ音乐的歌单');
 		$form->addInput($server);
-		$netease = new Typecho_Widget_Helper_Form_Element_Radio('netease', array ('0' => '自定义API', '1' => 'Shota\'s API', '2' => 'O\'s API', '3' => '犬\'s API' ,'4' => 'Meto API'), '1','网易云音乐解析服务器选择', '您可以自行选择音乐歌单解析服务器');
+		$netease = new Typecho_Widget_Helper_Form_Element_Radio('netease', array ('0' => '自定义API', '1' => 'Shota\'s API', '2' => 'O\'s API', '3' => 'Meto API'), '1','网易云音乐解析服务器选择', '您可以自行选择音乐歌单解析服务器');
 		$form->addInput($netease);
-		$tencent = new Typecho_Widget_Helper_Form_Element_Radio('tencent', array ('0' => '自定义API', '1' => 'Meto API'), '1','QQ音乐解析服务器选择', '您可以自行选择音乐歌单解析服务器');
+		$tencent = new Typecho_Widget_Helper_Form_Element_Radio('tencent', array ('0' => '自定义API', '1' => 'Meto API', '2' => 'O\'s API'), '1','QQ音乐解析服务器选择', '您可以自行选择音乐歌单解析服务器');
     	$form->addInput($tencent);
 		$api = new Typecho_Widget_Helper_Form_Element_Text('iapi', null, null, _t('自定义API'), '若您上一个设置选择了自定义API，请您按照下面的方式填写，若没有选择则可以空着<br/>示例：https://api.713.moe/netease?type=playlist&id=');
         $form->addInput($api);
@@ -189,14 +189,11 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 				$api_out = $api;
 				$apid = '0';
 			}elseif($netease === '1'){
-				$api_out = 'https://api.baka.fun/netease/?type=playlist&id=';
+				$api_out = 'https://api.baka.fun/netease?type=playlist&id=';
 				$apid = '1';
 			}elseif($netease === '2'){
-				$api_out = 'https://api.ohmyga.cn/netease/?use=1&type=playlist&id=';
+				$api_out = 'https://api.bakaomg.cn/v1/music/netease?use=1&type=playlist&id=';
 				$apid = '2';
-			}elseif($netease === '3'){
-				$api_out = 'https://api.fczbl.vip/163/?&type=playlist&id=';
-				$apid = '3';
 			}elseif($netease === '4'){
 				$api_out = 'https://api.i-meto.com/meting/api?server=netease&type=playlist&id=';
 				$apid = '4';
@@ -208,6 +205,9 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 			}elseif($tencent === '1'){
 				$api_out = "https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=";
 				$apid = '1';
+			}elseif($tencent === '2'){
+				$api_out = "https://api.bakaomg.cn/v1/music/qq?use=1&type=playlist&id=";
+				$apid = '2';
 			}
 		}
 		
