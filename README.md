@@ -9,7 +9,7 @@
 ---
 
 ## 特色
- - 支持解析网易云音乐歌单（默认提供：[Shota's API](https://api.9jojo.cn/page/netease)）
+ - 支持解析网易云音乐歌单（默认提供：[Shota's API](https://api.baka.fun/page/netease)）
  - 支持解析QQ音乐歌单（默认提供：[Meto API](https://api.i-meto.com/)）（Ver.1.1.1+）
  - 支持自定义播放器主题颜色（作为进度条和音量条的主题颜色）
  - 支持开启自动播放（仅部分浏览器支持）
@@ -28,18 +28,17 @@
 
 ## 开源项目
  - [APlayer](https://github.com/MoePlayer/APlayer)（播放器JS）
- - [MetingJS](https://github.com/metowolf/MetingJS)（解析网易云音乐歌单歌曲）
+ - [MetingJS](https://github.com/metowolf/MetingJS)（解析网易云音乐/QQ音乐歌单歌曲）
 
 ## API支持
- - [Shota's API](https://api.9jojo.cn/page/netease)（Shota's API 网易云音乐解析）
- - [O's API](https://api.ohmyga.cn/page/netease)（O's API 网易云音乐解析）
- - [犬's API](https://api.fczbl.vip/163/)（犬's API 网易云音乐解析）
+ - [Shota's API](https://api.baka.fun/page/netease)（Shota's API 网易云音乐解析）
+ - [O's API](https://api.bakaomg.cn/magicbook/pages/music/netease)（O's API QQ音乐/网易云音乐解析）
  - [Meto API](https://api.i-meto.com/)（Meto API QQ音乐/网易云音乐解析）
 
 ## 相关
- - 演示站点：[我的博客](https://baka.fun)
+ - 演示站点：暂无
  - 介绍文章：[APlayerAtBottom - 给博客加上底部播放器吧](https://baka.fun/p/135)
 
 ---
 
-Copyright &copy; 2020-2021 [小太](https://github.com/SatoSouta) All rights reserved.
+Copyright &copy; 2020-2022 [小太](https://github.com/SatoSouta) All rights reserved.
