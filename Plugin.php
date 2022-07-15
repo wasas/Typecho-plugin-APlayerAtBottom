@@ -192,11 +192,11 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 					$api_out = 'https://api.baka.fun/netease?type=playlist&id=';
 					$apid = '1';
 				}elseif($netease === '2'){
-					$api_out = 'https://api.bakaomg.cn/v1/music/netease?use=1&type=playlist&id=';
+					$api_out = 'https://api.bakaomg.cn/v1/music/netease?use=2&encode=raw&type=playlist&id=';
 					$apid = '2';
-				}elseif($netease === '4'){
+				}elseif($netease === '3'){
 					$api_out = 'https://api.i-meto.com/meting/api?server=netease&type=playlist&id=';
-					$apid = '4';
+					$apid = '3';
 				}
 			}elseif($server === '1'){
 				if($tencent === '0'){
@@ -206,7 +206,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 					$api_out = "https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=";
 					$apid = '1';
 				}elseif($tencent === '2'){
-					$api_out = "https://api.bakaomg.cn/v1/music/qq?use=1&type=playlist&id=";
+					$api_out = "https://api.bakaomg.cn/v1/music/qq?use=2&encode=raw&type=playlist&id=";
 					$apid = '2';
 				}
 			}
