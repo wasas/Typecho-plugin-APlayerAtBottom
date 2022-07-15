@@ -5,7 +5,7 @@
  * 
  * @package APlayerAtBottom
  * @author 小太
- * @version 1.1.2
+ * @version 1.1.3
  * @link https://baka.fun/
  */
 class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
@@ -47,7 +47,7 @@ class APlayerAtBottom_Plugin implements Typecho_Plugin_Interface
 			echo ('<style>.buttons a{background:#467b96; color:#fff; border-radius:4px; padding:.5em .75em; display:inline-block}</style>');
 		
 			//定义此插件版本
-			$version = '1.1.2'; 
+			$version = '1.1.3'; 
 
 			//GithubAPI内容获取UA设定
 			ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; GreenBrowser)');
