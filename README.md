@@ -31,7 +31,7 @@
  - [MetingJS](https://github.com/metowolf/MetingJS)（解析网易云音乐/QQ音乐歌单歌曲）
 
 ## API支持
- - [Shota's API](https://api.baka.fun/page/netease)（Shota's API 网易云音乐解析）
+ - [Baka API](https://api.baka.fun/page/netease)（Baka API 网易云音乐解析）
  - [O's API](https://api.bakaomg.cn/magicbook/pages/music/netease)（O's API QQ音乐/网易云音乐解析）
  - [Meto API](https://api.i-meto.com/)（Meto API QQ音乐/网易云音乐解析）
 
