@@ -9,7 +9,7 @@
 ---
 
 ## 特色
- - 支持解析网易云音乐歌单（默认提供：[Shota's API](https://api.baka.fun/page/netease)）
+ - 支持解析网易云音乐歌单（默认提供：[Baka API](https://api.baka.fun/page/netease)）
  - 支持解析QQ音乐歌单（默认提供：[Meto API](https://api.i-meto.com/)）（Ver.1.1.1+）
  - 支持自定义播放器主题颜色（作为进度条和音量条的主题颜色）
  - 支持开启自动播放（仅部分浏览器支持）
